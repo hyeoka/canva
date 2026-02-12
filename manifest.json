@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Canva Paste Position Locker",
+  "description": "Canva 에디터에서 복사/붙여넣기 시 원본 요소의 좌표를 기억해 붙여넣은 요소를 같은 위치로 이동합니다.",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": ["https://www.canva.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
